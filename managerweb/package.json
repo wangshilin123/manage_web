@@ -1,0 +1,46 @@
+{
+  "name": "managerweb",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^7.0.1",
+    "@vicons/ionicons5": "^0.12.0",
+    "vue": "^3.4.37"
+  },
+  "devDependencies": {
+    "@alova/mock": "^2.0.6",
+    "@faker-js/faker": "^9.0.3",
+    "@types/node": "^22.5.5",
+    "@vicons/antd": "^0.12.0",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@vueuse/core": "^5.0.0",
+    "alova": "^3.0.17",
+    "ant-design-vue": "^4.2.5",
+    "antd": "^5.20.6",
+    "autoprefixer": "^10.4.20",
+    "element-resize-detector": "^1.2.4",
+    "install": "^0.13.0",
+    "less": "^4.2.0",
+    "mockjs": "^1.1.0",
+    "naive-ui": "^2.39.0",
+    "npm": "^10.8.3",
+    "path": "^0.12.7",
+    "pinia": "^2.2.2",
+    "postcss": "^8.4.47",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.12",
+    "typescript": "^5.6.2",
+    "unplugin-vue-components": "^0.27.4",
+    "vite": "^5.4.1",
+    "vite-plugin-mock": "^3.0.2",
+    "vue-router": "^4.4.5",
+    "vue-tsc": "^2.0.29",
+    "vuedraggable": "^4.1.0"
+  }
+}

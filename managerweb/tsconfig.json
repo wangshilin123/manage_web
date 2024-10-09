@@ -1,0 +1,58 @@
+{
+  // 编译器选项配置
+  "compilerOptions": {
+    // 启用 ES 模块互操作性，以便在使用 UMD 模块时不会出现问题
+    "esModuleInterop": true,
+    // 模块的组织方式使用 ESNext
+    "module": "esnext",
+    // 目标语言标准为 ESNext
+    "target": "esnext",
+    // 允许从使用默认导出的模块中进行默认导入
+    "allowSyntheticDefaultImports": true,
+    // 模块解析方式为 Node.js 的解析方式
+    "moduleResolution": "node",
+    // 启用严格类型检查
+//    "strict": true,
+    // JSX 相关配置，保留 JSX 代码不进行转换
+    "jsx": "preserve",
+    // 生成源码映射，有助于调试
+    "sourceMap": true,
+    // 允许导入 JSON 模块
+    "resolveJsonModule": true,
+    // 定义要包含在编译环境中的库文件，这里包括 ESNext 和 DOM
+    "lib": ["esnext", "dom"],
+    // 指定类型声明文件，这里是 Vite 的客户端类型声明
+    "typeRoots": [
+      "./node_modules/@types/",
+      "./types"
+    ],
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "/#/*": [
+        "./types/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types/**/*.d.ts",
+    "types/**/*.ts",
+    "build/**/*.ts",
+    "build/**/*.d.ts",
+    "mock/**/*.ts",
+    "components.d.ts",
+    "vite.config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.js"
+  ]
+}
